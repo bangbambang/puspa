@@ -1,0 +1,18 @@
+{
+    "name": "PusPa",
+    "license": "MIT",
+    "type": "library",
+    "description": "Pustaka Pajak",
+    "autoload": {
+        "psr-4": {
+            "Puspa\\": "src"
+        }
+    },
+    "require": {
+        "php": "~7.1"
+    },
+    "require-dev": {
+        "codeception/codeception": "*",
+        "phpdocumentor/phpdocumentor": "2.*"
+    }
+}
