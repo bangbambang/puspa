@@ -4,9 +4,9 @@ namespace Puspa\TaxObject;
 
 interface ObjectTaxable
 {
-    public const ROUNDDOWN  = -1;
-    public const NEARESTINT = 0;
-    public const ROUNDUP    = 1;
+    const ROUNDDOWN  = -1;
+    const NEARESTINT = 0;
+    const ROUNDUP    = 1;
 
     public function setTaxedAmount(int $amount) : void;
     public function getTaxedAmount() : int;
