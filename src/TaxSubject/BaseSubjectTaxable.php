@@ -16,6 +16,7 @@ abstract class BaseSubjectTaxable implements SubjectTaxable
         }
     }
 
+    /** {@inheritDoc} */
     final public function setNPWP(string $npwp) : void
     {
         if(preg_match($this->pattern, $npwp) !== 1 || strlen($npwp) !== 20) {
@@ -24,31 +25,37 @@ abstract class BaseSubjectTaxable implements SubjectTaxable
         $this->npwp = $npwp;
     }
 
+    /** {@inheritDoc} */
     final public function getNPWP() : string
     {
         return $this->npwp;
     }
 
-    final public function hasNPWP() : boolean
+    /** {@inheritDoc} */
+    final public function hasNPWP() : bool
     {
         return (!empty($this->npwp));
     }
 
+    /** {@inheritDoc} */
     final public function setName(string $name) : void
     {
         $this->name = $name;
     }
 
+    /** {@inheritDoc} */
     final public function getName() : string
     {
         return $this->name;
     }
 
+    /** {@inheritDoc} */
     final public function setAddress(string $address) : void
     {
         $this->address = $address;
     }
 
+    /** {@inheritDoc} */
     final public function getAddress() : string
     {
         return $this->address;

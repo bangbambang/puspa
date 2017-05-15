@@ -8,12 +8,12 @@ class PersonTaxable extends BaseSubjectTaxable
     private $children = 0;
     private $guardian = false;
 
-    public function setMaritalStatus(boolean $status) : void
+    public function setMaritalStatus(bool $status) : void
     {
         $this->married = $status;
     }
 
-    public function isMarried() : boolean
+    public function isMarried() : bool
     {
         return $this->married;
     }
@@ -31,12 +31,21 @@ class PersonTaxable extends BaseSubjectTaxable
         return $this->children;
     }
 
-    public function setGuardianStatus(boolean $status) : void
+    /**
+     * Wether current subject is a guardian
+     *
+     * Note that currently, a woman can only be a guardian if she is divorced
+     * and hold custody of her children. Otherwise, guardian status should only
+     * be set to the husband.
+     * @param $status
+     * @return void
+     */
+    public function setGuardianStatus(bool $status) : void
     {
         $this->guardian = $status;
     }
 
-    public function isGuardian() : boolean
+    public function isGuardian() : bool
     {
         return $this->guardian;
     }
