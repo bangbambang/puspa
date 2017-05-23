@@ -16,9 +16,9 @@
  *
  * @SuppressWarnings(PHPMD)
 */
-class AcceptanceTester extends \Codeception\Actor
+class TaxCalculatorTester extends \Codeception\Actor
 {
-    use _generated\AcceptanceTesterActions;
+    use _generated\TaxCalculatorTesterActions;
 
    /**
     * Define custom actions here

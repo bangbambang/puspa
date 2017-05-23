@@ -1,0 +1,5 @@
+class_name: TaxCalculatorTester
+modules:
+    enabled:
+        - Asserts
+        - \Helper\TaxCalculator

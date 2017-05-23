@@ -1,0 +1,5 @@
+class_name: TaxLawTester
+modules:
+    enabled:
+        - Asserts
+        - \Helper\TaxLaw

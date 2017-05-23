@@ -1,0 +1,5 @@
+class_name: TaxSubjectTester
+modules:
+    enabled:
+        - Asserts
+        - \Helper\TaxSubject

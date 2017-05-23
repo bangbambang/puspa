@@ -16,9 +16,9 @@
  *
  * @SuppressWarnings(PHPMD)
 */
-class PPhTester extends \Codeception\Actor
+class TaxReportTester extends \Codeception\Actor
 {
-    use _generated\PPhTesterActions;
+    use _generated\TaxReportTesterActions;
 
    /**
     * Define custom actions here

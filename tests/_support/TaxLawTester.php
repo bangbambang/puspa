@@ -16,9 +16,9 @@
  *
  * @SuppressWarnings(PHPMD)
 */
-class FunctionalTester extends \Codeception\Actor
+class TaxLawTester extends \Codeception\Actor
 {
-    use _generated\FunctionalTesterActions;
+    use _generated\TaxLawTesterActions;
 
    /**
     * Define custom actions here
