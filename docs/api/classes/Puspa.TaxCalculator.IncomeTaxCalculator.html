@@ -155,9 +155,8 @@
             <div class="element class">
                 <h1>IncomeTaxCalculator</h1>
                 <small style="display: block; text-align: right">
-                                            Extends <a href="../classes/Puspa.TaxCalculator.BaseTaxCalculator.html">\Puspa\TaxCalculator\BaseTaxCalculator</a>
-                                                                Implements <a href="../classes/Puspa.TaxCalculator.Calculator.html">\Puspa\TaxCalculator\Calculator</a>
-                                    </small>
+                                            Extends <a href="../classes/Puspa.TaxCalculator.BaseCalculator.html">\Puspa\TaxCalculator\BaseCalculator</a>
+                                                        </small>
                 <p class="short_description"></p>
                 <div class="details">
                     <div class="long_description">
@@ -232,7 +231,8 @@ is assigned to the calculator.</p></div>
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"><p>The actual calculation is defined by the Law object. The calculator's
-job is to pass the constructed parameters to the law's calculate method.
+job is to validate and ensure tax subject and object is compatible with
+supplied law(s).
 On some occasion (for example, on calculating yearly tax summary), this
 method may do multiple calculation.</p></div>
 
@@ -261,7 +261,7 @@ method may do multiple calculation.</p></div>
                                                                             
                                                                             <h3>Response</h3>
                                         <code>\Puspa\TaxCalculator\iterable</code><p><p>calculation result detail. this may be a simple array or
-more powerful data structure (such as generator).</p></p>
+advanced data structure (such as generator).</p></p>
                                                                     </div>
                             </div>
 
@@ -364,7 +364,7 @@ more powerful data structure (such as generator).</p></p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 24 May 2017 04:32:46 +0700.<br/>
+            generated on Wed, 24 May 2017 07:38:46 +0700.<br/>
     </footer>
     </body>
 </html>

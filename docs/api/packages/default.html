@@ -156,12 +156,19 @@ based on Subject type, Object type, and Tax law in use.</p>
 
                                         <div id="ObjectTaxable" class="element ajax clickable interface">
         <h1>ObjectTaxable<a href="../classes/Puspa.TaxObject.ObjectTaxable.html">¶</a></h1>
-        <p class="short_description"></p>
+        <p class="short_description">Base contract for tax objects</p>
         <div class="details collapse"></div>
         <a href="../classes/Puspa.TaxObject.ObjectTaxable.html" class="more">« More »</a>
     </div>
 
                 
+                                        <div id="BaseCalculator" class="element ajax clickable class">
+        <h1>BaseCalculator<a href="../classes/Puspa.TaxCalculator.BaseCalculator.html">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../classes/Puspa.TaxCalculator.BaseCalculator.html" class="more">« More »</a>
+    </div>
+
                                         <div id="BaseObjectTaxable" class="element ajax clickable class">
         <h1>BaseObjectTaxable<a href="../classes/Puspa.TaxObject.BaseObjectTaxable.html">¶</a></h1>
         <p class="short_description">Base class for tax objects. Object-specific method should be defined
@@ -170,11 +177,12 @@ at concrete child classes.</p>
         <a href="../classes/Puspa.TaxObject.BaseObjectTaxable.html" class="more">« More »</a>
     </div>
 
-                                        <div id="BaseTaxCalculator" class="element ajax clickable class">
-        <h1>BaseTaxCalculator<a href="../classes/Puspa.TaxCalculator.BaseTaxCalculator.html">¶</a></h1>
-        <p class="short_description"></p>
+                                        <div id="BaseTaxLaw" class="element ajax clickable class">
+        <h1>BaseTaxLaw<a href="../classes/Puspa.TaxLaw.BaseTaxLaw.html">¶</a></h1>
+        <p class="short_description">This class define final methods for tax law&#039;s basic property
+while leaving calculation details to concrete subclasses.</p>
         <div class="details collapse"></div>
-        <a href="../classes/Puspa.TaxCalculator.BaseTaxCalculator.html" class="more">« More »</a>
+        <a href="../classes/Puspa.TaxLaw.BaseTaxLaw.html" class="more">« More »</a>
     </div>
 
                                         <div id="IncomeTaxable" class="element ajax clickable class">
@@ -200,10 +208,17 @@ at concrete child classes.</p>
 
                                         <div id="PPh21" class="element ajax clickable class">
         <h1>PPh21<a href="../classes/Puspa.TaxLaw.IncomeTax.PPh21.html">¶</a></h1>
-        <p class="short_description">This class define final methods for LawApplicable inteface as applied to
-every Income Tax laws.</p>
+        <p class="short_description">Define PPh21 calculation. Extending classes should only need to override
+tresholds</p>
         <div class="details collapse"></div>
         <a href="../classes/Puspa.TaxLaw.IncomeTax.PPh21.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PTKP" class="element ajax clickable class">
+        <h1>PTKP<a href="../classes/Puspa.TaxLaw.IncomeTax.PTKP.html">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../classes/Puspa.TaxLaw.IncomeTax.PTKP.html" class="more">« More »</a>
     </div>
 
                             </div>
@@ -217,7 +232,7 @@ every Income Tax laws.</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 24 May 2017 04:32:45 +0700.<br/>
+            generated on Wed, 24 May 2017 07:38:46 +0700.<br/>
     </footer>
     </body>
 </html>
