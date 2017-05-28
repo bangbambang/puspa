@@ -1,3 +1,6 @@
 vendor/
 tests/_output/*
 docs/api/phpdoc-cache-*
+
+# ide
+.idea

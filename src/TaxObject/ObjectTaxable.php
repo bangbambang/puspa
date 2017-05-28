@@ -7,6 +7,9 @@
 
 namespace Puspa\TaxObject;
 
+/**
+ * Base contract for tax objects
+ */
 interface ObjectTaxable
 {
     /** @const ROUNDDOWN round fraction down to applicable value */
@@ -71,25 +74,5 @@ interface ObjectTaxable
      */
      public function getRoundingMode() : int;
 
-    /**
-     * Set date period of tax calculation.
-     *
-     * The implementing class SHOULD NOT enforce acceptable time format 
-     * That SHOULD be the job of the calculator and tax law inference API.
-     * E.g: VAT MAY be calculated daily, monthly, or yearly; Income tax
-     * can only be calculated monthly or yearly. The calculator should be the one
-     * doing inference based on set date.
-     *
-     * @param \DateTimeInterface $date
-     * @return void
-     */
-    public function setDate(\DateTimeInterface $date) : void;
-
-    /**
-     * Get the time
-     *
-     * @return \DateTimeInterface date, as supplied by setter
-     */
-    public function getDate() : \DateTimeInterface;
 }
 

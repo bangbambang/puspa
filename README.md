@@ -1,18 +1,30 @@
-Pustaka Pajak
-=============
+# Pustaka Pajak
 
 Work in progress.
 
-### How to Use
+## How to Use
 
-See tests folder for usage examples. If no test is defined yet, then be patient.
+See tests folder for usage examples.
+If no test is defined yet, then be patient. I'm on my way.
 
 Also, API doc should be available [https://bangbambang.github.io/puspa/api](here).
 
-### How to Contribute
+## TODOs
 
-TBA
+ - Complete this README
+ - Exclude /docs/ (too lazy for now)
 
-### License
+## How to Contribute
 
-MIT (see license file).
+### Dataset Contribution
+
+ - Provide canonical URL to Tax Law reference (currently we use ortax)
+ - Provide anonymous tx calculation samples
+
+### Code Contribution
+
+ - TBA
+
+## License
+
+[MIT](LICENSE).

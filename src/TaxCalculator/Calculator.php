@@ -24,26 +24,32 @@ interface Calculator
      * The compatibility of those two should be resolved when a specific law
      * is assigned to the calculator.
      *
-     * @param Puspa\TaxSubject\SubjectTaxable   $subject
-     * @param Puspa\TaxObject\ObjectTaxable     $object
+     * @param SubjectTaxable   $subject
+     * @param ObjectTaxable     $object
      * @return void
      */
-    public function __construct(SubjectTaxable $subject, ObjectTaxable $object) : void;
+    public function __construct(SubjectTaxable $subject, ObjectTaxable $object);
+
+
+    public function getTaxSubject() : SubjectTaxable;
+
+    public function getTaxObject() : ObjectTaxable;
 
     /**
      * Calculate tax based on tax law(s)
      *
      * The actual calculation is defined by the Law object. The calculator's
-     * job is to pass the constructed parameters to the law's calculate method.
+     * job is to validate and ensure tax subject and object is compatible with 
+     * supplied law(s).
      * On some occasion (for example, on calculating yearly tax summary), this
      * method may do multiple calculation.
      * 
-     * @param Puspa\TaxLaw\LawApplicable $taxLaw If no specific law supplied, 
+     * @param LawApplicable $taxLaw If no specific law supplied,
      *          one (or more) should be inferred based on year.
      * @return iterable calculation result detail. this may be a simple array or
-     * more powerful data structure (such as generator).
+     * advanced data structure (such as generator).
      * @throws \InvalidArgumentException if supplied law(s) are inapplicable 
      * with the tax object or subject.
      */
-    public function calculate(LawApplicable ...$taxLaw) : iterable;
+    public function calculate(LawApplicable ...$taxLaws) : iterable;
 }
