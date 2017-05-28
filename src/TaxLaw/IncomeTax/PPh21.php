@@ -81,7 +81,7 @@ class PPh21 extends BaseTaxLaw
             $tax = (new PKP())->getProgressiveAmount($taxDeductible);
         }
         return [
-            'ptkp'              => min($threshold),
+            'ptkp'              => $threshold,
             'tax_deductible'    => $taxDeductible,
             'tax_free'          => 0, //TODO: add biaya jabatan, dll
             'tax'               => $tax,
