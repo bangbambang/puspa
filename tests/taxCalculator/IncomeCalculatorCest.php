@@ -25,7 +25,7 @@ class IncomeCalculatorCest
         $calc = new IncomeTaxCalculator(new PersonTaxable('foo'), new IncomeTaxable(60000000, '01-2017'));
         $result = $calc->calculate(new PPh21());
         $I->assertNotEmpty($result);
-        $I->assertEquals(54000000, $result[0]['tax_free']);
+        $I->assertEquals(54000000, $result[0]['ptkp']);
         $I->assertEquals(6000000, $result[0]['tax_deductible']);
         $I->assertEquals(300000, $result[0]['tax']);
     }
