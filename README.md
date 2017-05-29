@@ -1,5 +1,7 @@
 # Pustaka Pajak
 
+[![Build Status](https://travis-ci.org/bangbambang/puspa.svg?branch=master)](https://travis-ci.org/bangbambang/puspa)
+
 Work in progress.
 
 ## How to Use
