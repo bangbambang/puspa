@@ -9,8 +9,6 @@ Work in progress.
 See tests folder for usage examples.
 If no test is defined yet, then be patient. I'm on my way.
 
-Also, API doc should be available [https://bangbambang.github.io/puspa/api](here).
-
 ## TODOs
 
  - Complete this README
